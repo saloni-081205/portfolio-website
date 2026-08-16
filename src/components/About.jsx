@@ -128,7 +128,7 @@ const About = () => {
                     </p>
 
                     {/* Glow effect on hover/active */}
-                    <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-violet-500/0 to-purple-500/0 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100 group-hover:from-violet-500/10 group-hover:via-purple-500/10 group-hover:to-fuchsia-500/10 group-active:opacity-100 group-active:from-violet-500/10 group-active:via-purple-500/10 group-active:to-fuchsia-500/10 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
+                    <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-violet-500/0 to-purple-500/0 opacity-0 blur-xl transition-opacity duration-300 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
                   </motion.div>
                 );
               })}
