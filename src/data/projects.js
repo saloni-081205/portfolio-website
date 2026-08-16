@@ -109,7 +109,7 @@ export const projects = [
       "JSP",
       "Servlets",
       "JDBC",
-      "MySQL",
+      "Oracle",
       "HTML/CSS",
       "MVC Architecture"
     ],
@@ -122,7 +122,7 @@ export const projects = [
       "E-Ticket Generation — Provides electronic ticket confirmation after successful reservation.",
       "Role-Based Dashboards — Separate Admin and Customer functionality with role-based access.",
       "Secure Authentication — Implements session-based authentication, input validation, and parameterized queries.",
-      "MySQL Database — Manages users, flights, reservations, payments, and seat allocation data."
+      "Oracle Database — Manages users, flights, reservations, payments, and seat allocation data."
     ],
 
     githubUrl: "https://github.com/saloni-081205/airline-reservation-system",
