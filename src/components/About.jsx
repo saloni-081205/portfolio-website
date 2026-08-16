@@ -103,6 +103,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
+<<<<<<< HEAD
                     className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-violet-500/40 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] active:-translate-y-1 active:scale-105 active:border-violet-500/40 active:shadow-[0_0_30px_rgba(139,92,246,0.15)] focus:-translate-y-1 focus:scale-105 focus:border-violet-500/40 focus:shadow-[0_0_30px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] dark:active:border-violet-500/40 dark:active:shadow-[0_0_30px_rgba(139,92,246,0.15)] dark:focus:border-violet-500/40 dark:focus:shadow-[0_0_30px_rgba(139,92,246,0.15)]"
                     onTouchStart={(e) => {
                       // Add a temporary class for touch feedback
@@ -117,6 +118,15 @@ const About = () => {
                     <Icon
                       size={22}
                       className="relative text-violet-600 transition-all duration-300 group-hover:scale-110 group-hover:text-violet-500 group-active:scale-110 group-active:text-violet-500 group-focus:scale-110 group-focus:text-violet-500 dark:text-violet-400 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300"
+=======
+                    className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-5 backdrop-blur-sm transition-all duration-300 active:scale-95 md:hover:-translate-y-1 md:hover:scale-105 md:hover:border-violet-500/40 md:hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 md:dark:hover:border-violet-500/40 md:dark:hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]"
+                  >
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 transition-opacity duration-300 md:group-hover:opacity-100" />
+                    
+                    <Icon
+                      size={22}
+                      className="relative text-violet-600 transition-all duration-300 md:group-hover:scale-110 md:group-hover:text-violet-500 dark:text-violet-400 md:dark:group-hover:text-violet-300"
+>>>>>>> 25a0a44 (Updated About.jsx)
                     />
 
                     <p className="relative mt-3 text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent dark:from-violet-400 dark:to-purple-400">
@@ -127,8 +137,13 @@ const About = () => {
                       {item.label}
                     </p>
 
+<<<<<<< HEAD
                     {/* Glow effect on hover/active */}
                     <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-violet-500/0 to-purple-500/0 opacity-0 blur-xl transition-opacity duration-300 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
+=======
+                    {/* Glow effect on hover - only on desktop */}
+                    <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-violet-500/0 to-purple-500/0 opacity-0 blur-xl transition-opacity duration-300 md:group-hover:opacity-100 md:group-hover:from-violet-500/10 md:group-hover:via-purple-500/10 md:group-hover:to-fuchsia-500/10" />
+>>>>>>> 25a0a44 (Updated About.jsx)
                   </motion.div>
                 );
               })}
