@@ -14,7 +14,7 @@ const Education = () => {
         score: "CGPA: 9.67",
         description:
           "Pursuing Computer Engineering with a strong focus on software development, web technologies, databases, and modern application development. Building practical experience through full-stack projects, hackathons, and emerging technologies such as AI and computer vision.",
-},
+  },
   ];
 
   return (
@@ -55,23 +55,23 @@ const Education = () => {
               >
 
                 {/* Education card */}
-                <div className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)]">
+                <div className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] active:-translate-y-2 active:scale-[1.02] active:border-violet-500/40 active:shadow-[0_0_40px_rgba(139,92,246,0.15)] focus:-translate-y-2 focus:scale-[1.02] focus:border-violet-500/40 focus:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:active:border-violet-500/40 dark:active:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:focus:border-violet-500/40 dark:focus:shadow-[0_0_40px_rgba(139,92,246,0.15)]">
                   
-                  {/* Glow effect on hover */}
-                  <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500" />
+                  {/* Glow effect on hover/active/focus */}
+                  <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
                   
                   {/* Top border glow */}
-                  <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
+                  <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
 
                   {/* Icon */}
-                  <div className="absolute -top-5 left-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-violet-500/30 bg-white/90 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:border-violet-500 group-hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] dark:border-violet-500/30 dark:bg-gray-950/90 dark:text-violet-400 dark:group-hover:border-violet-400">
+                  <div className="absolute -top-5 left-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-violet-500/30 bg-white/90 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:border-violet-500 group-hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] group-active:scale-110 group-active:border-violet-500 group-active:shadow-[0_0_30px_rgba(139,92,246,0.3)] group-focus:scale-110 group-focus:border-violet-500 group-focus:shadow-[0_0_30px_rgba(139,92,246,0.3)] dark:border-violet-500/30 dark:bg-gray-950/90 dark:text-violet-400 dark:group-hover:border-violet-400 dark:group-active:border-violet-400 dark:group-focus:border-violet-400">
                     <GraduationCap size={22} />
                   </div>
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
 
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-violet-600 transition-colors duration-300 group-hover:text-violet-500 dark:text-violet-400 dark:group-hover:text-violet-300">
+                      <p className="text-sm font-semibold text-violet-600 transition-colors duration-300 group-hover:text-violet-500 group-active:text-violet-500 group-focus:text-violet-500 dark:text-violet-400 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300">
                         {item.duration}
                       </p>
 
@@ -79,20 +79,20 @@ const Education = () => {
                         {item.degree}
                       </h3>
 
-                      <p className="mt-1 font-medium text-gray-700 transition-colors duration-300 group-hover:text-violet-700 dark:text-gray-300 dark:group-hover:text-violet-300">
+                      <p className="mt-1 font-medium text-gray-700 transition-colors duration-300 group-hover:text-violet-700 group-active:text-violet-700 group-focus:text-violet-700 dark:text-gray-300 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300">
                         {item.field}
                       </p>
                     </div>
 
-                    <span className="w-fit rounded-full bg-gradient-to-r from-violet-500/10 to-purple-500/10 px-4 py-1.5 text-sm font-semibold text-violet-600 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+                    <span className="w-fit rounded-full bg-gradient-to-r from-violet-500/10 to-purple-500/10 px-4 py-1.5 text-sm font-semibold text-violet-600 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] group-active:scale-105 group-active:shadow-[0_0_20px_rgba(139,92,246,0.2)] group-focus:scale-105 group-focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                       {item.score}
                     </span>
 
                   </div>
 
-                  <div className="mt-5 border-t border-violet-500/10 pt-5 transition-colors duration-300 group-hover:border-violet-500/20 dark:border-violet-500/10 dark:group-hover:border-violet-500/20">
+                  <div className="mt-5 border-t border-violet-500/10 pt-5 transition-colors duration-300 group-hover:border-violet-500/20 group-active:border-violet-500/20 group-focus:border-violet-500/20 dark:border-violet-500/10 dark:group-hover:border-violet-500/20 dark:group-active:border-violet-500/20 dark:group-focus:border-violet-500/20">
 
-                    <p className="flex items-center gap-2 font-medium text-gray-800 transition-colors duration-300 group-hover:text-violet-800 dark:text-gray-200 dark:group-hover:text-violet-300">
+                    <p className="flex items-center gap-2 font-medium text-gray-800 transition-colors duration-300 group-hover:text-violet-800 group-active:text-violet-800 group-focus:text-violet-800 dark:text-gray-200 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300">
                       <span className="inline-block h-1.5 w-1.5 rounded-full bg-violet-500 shadow-[0_0_10px_rgba(139,92,246,0.5)]" />
                       {item.institution}
                     </p>
@@ -101,7 +101,7 @@ const Education = () => {
                           📍 {item.location}
                     </p>
 
-                    <p className="mt-4 text-sm leading-6 text-gray-600 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">
+                    <p className="mt-4 text-sm leading-6 text-gray-600 transition-colors duration-300 group-hover:text-gray-700 group-active:text-gray-700 group-focus:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300 dark:group-active:text-gray-300 dark:group-focus:text-gray-300">
                       {item.description}
                     </p>
 

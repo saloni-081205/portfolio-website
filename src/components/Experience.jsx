@@ -50,19 +50,19 @@ const Experience = () => {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] sm:p-8 dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)]"
+                className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] active:-translate-y-2 active:scale-[1.02] active:border-violet-500/40 active:shadow-[0_0_40px_rgba(139,92,246,0.15)] focus:-translate-y-2 focus:scale-[1.02] focus:border-violet-500/40 focus:shadow-[0_0_40px_rgba(139,92,246,0.15)] sm:p-8 dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:active:border-violet-500/40 dark:active:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:focus:border-violet-500/40 dark:focus:shadow-[0_0_40px_rgba(139,92,246,0.15)]"
               >
-                {/* Glow effect on hover */}
-                <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500" />
+                {/* Glow effect on hover/active/focus */}
+                <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
 
                 {/* Top border glow */}
-                <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
+                <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
 
                 <div className="relative flex flex-col gap-6 md:flex-row">
 
                   {/* Icon */}
                   <div className="shrink-0">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(139,92,246,0.2)] group-active:scale-110 group-active:shadow-[0_0_30px_rgba(139,92,246,0.2)] group-focus:scale-110 group-focus:shadow-[0_0_30px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                       <BriefcaseBusiness size={26} />
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const Experience = () => {
                   <div className="flex-1">
 
                     {/* Type */}
-                    <p className="text-xs font-semibold uppercase tracking-wider text-violet-600 transition-colors duration-300 group-hover:text-violet-500 dark:text-violet-400 dark:group-hover:text-violet-300">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-violet-600 transition-colors duration-300 group-hover:text-violet-500 group-active:text-violet-500 group-focus:text-violet-500 dark:text-violet-400 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300">
                       {item.type}
                     </p>
 
@@ -81,20 +81,20 @@ const Experience = () => {
                     </h3>
 
                     {/* Company */}
-                    <p className="mt-1 text-base font-semibold text-gray-700 transition-colors duration-300 group-hover:text-violet-700 dark:text-gray-300 dark:group-hover:text-violet-300">
+                    <p className="mt-1 text-base font-semibold text-gray-700 transition-colors duration-300 group-hover:text-violet-700 group-active:text-violet-700 group-focus:text-violet-700 dark:text-gray-300 dark:group-hover:text-violet-300 dark:group-active:text-violet-300 dark:group-focus:text-violet-300">
                       {item.company}
                     </p>
 
                     {/* Metadata */}
                     <div className="mt-3 flex flex-col gap-2 text-sm text-gray-500 sm:flex-row sm:flex-wrap sm:gap-5 dark:text-gray-400">
 
-                      <span className="flex items-center gap-2 transition-colors duration-300 group-hover:text-violet-600 dark:group-hover:text-violet-400">
+                      <span className="flex items-center gap-2 transition-colors duration-300 group-hover:text-violet-600 group-active:text-violet-600 group-focus:text-violet-600 dark:group-hover:text-violet-400 dark:group-active:text-violet-400 dark:group-focus:text-violet-400">
                         <CalendarDays size={16} />
                         {item.duration}
                       </span>
 
                       {item.location && (
-                        <span className="flex items-center gap-2 transition-colors duration-300 group-hover:text-violet-600 dark:group-hover:text-violet-400">
+                        <span className="flex items-center gap-2 transition-colors duration-300 group-hover:text-violet-600 group-active:text-violet-600 group-focus:text-violet-600 dark:group-hover:text-violet-400 dark:group-active:text-violet-400 dark:group-focus:text-violet-400">
                           <MapPin size={16} />
                           {item.location}
                         </span>
@@ -103,7 +103,7 @@ const Experience = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="mt-5 max-w-3xl text-sm leading-7 text-gray-600 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">
+                    <p className="mt-5 max-w-3xl text-sm leading-7 text-gray-600 transition-colors duration-300 group-hover:text-gray-700 group-active:text-gray-700 group-focus:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300 dark:group-active:text-gray-300 dark:group-focus:text-gray-300">
                       {item.description}
                     </p>
 
@@ -113,7 +113,7 @@ const Experience = () => {
                       {item.technologies.map((technology) => (
                         <span
                           key={technology}
-                          className="rounded-lg bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-600 transition-all duration-300 hover:scale-105 hover:bg-violet-500/20 hover:shadow-[0_0_10px_rgba(139,92,246,0.15)] dark:bg-violet-500/10 dark:text-violet-400 dark:hover:bg-violet-500/20"
+                          className="rounded-lg bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-600 transition-all duration-300 hover:scale-105 hover:bg-violet-500/20 hover:shadow-[0_0_10px_rgba(139,92,246,0.15)] active:scale-105 active:bg-violet-500/20 active:shadow-[0_0_10px_rgba(139,92,246,0.15)] focus:scale-105 focus:bg-violet-500/20 focus:shadow-[0_0_10px_rgba(139,92,246,0.15)] dark:bg-violet-500/10 dark:text-violet-400 dark:hover:bg-violet-500/20 dark:active:bg-violet-500/20 dark:focus:bg-violet-500/20"
                         >
                           {technology}
                         </span>
@@ -125,10 +125,10 @@ const Experience = () => {
                     <button
                       type="button"
                       onClick={() => setSelectedExperience(item)}
-                      className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)]"
+                      className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] active:scale-105 active:shadow-[0_0_30px_rgba(139,92,246,0.4)] focus:scale-105 focus:shadow-[0_0_30px_rgba(139,92,246,0.4)]"
                     >
                       View Experience
-                      <ArrowUpRight size={17} className="transition-transform duration-300 group-hover:rotate-45" />
+                      <ArrowUpRight size={17} className="transition-transform duration-300 group-hover:rotate-45 group-active:rotate-45 group-focus:rotate-45" />
                     </button>
 
                   </div>

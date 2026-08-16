@@ -80,7 +80,7 @@ const Hero = () => {
             {/* Contact */}
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-xl border border-violet-500/30 px-6 py-3.5 text-sm font-semibold text-gray-700 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] dark:border-violet-500/30 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
+              className="inline-flex items-center gap-2 rounded-xl border border-violet-500/30 px-6 py-3.5 text-sm font-semibold text-gray-700 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] active:-translate-y-1 active:scale-105 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.3)] focus:-translate-y-1 focus:scale-105 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.3)] dark:border-violet-500/30 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] dark:active:border-violet-400 dark:active:text-violet-400 dark:active:shadow-[0_0_20px_rgba(139,92,246,0.3)] dark:focus:border-violet-400 dark:focus:text-violet-400 dark:focus:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
             >
               <Mail size={18} />
               Contact Me
@@ -94,30 +94,33 @@ const Hero = () => {
               Find me on
             </span>
 
+            {/* GitHub - Commented out but with mobile support if uncommented */}
             {/* <a
                 href="https://github.com/saloni-081205"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] active:scale-110 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.2)] focus:scale-110 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:active:border-violet-400 dark:active:text-violet-400 dark:focus:border-violet-400 dark:focus:text-violet-400"
               >
                 <FaGithub size={18} />
               </a> */}
 
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/saloni-rana-539a4436a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=andr"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              className="rounded-lg border border-violet-500/30 p-2.5 text-gray-600 transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:text-gray-400 dark:hover:border-violet-400 dark:hover:text-violet-400"
+              className="rounded-lg border border-violet-500/30 p-2.5 text-gray-600 transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] active:-translate-y-1 active:scale-110 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.2)] focus:-translate-y-1 focus:scale-110 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:text-gray-400 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:active:border-violet-400 dark:active:text-violet-400 dark:focus:border-violet-400 dark:focus:text-violet-400"
             >
               <FaLinkedinIn size={18} />
             </a>
 
+            {/* Email */}
             <a
               href="mailto:salonics0812@gmail.com"
               aria-label="Email"
-              className="rounded-lg border border-violet-500/30 p-2.5 text-gray-600 transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:text-gray-400 dark:hover:border-violet-400 dark:hover:text-violet-400"
+              className="rounded-lg border border-violet-500/30 p-2.5 text-gray-600 transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] active:-translate-y-1 active:scale-110 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.2)] focus:-translate-y-1 focus:scale-110 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:text-gray-400 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:active:border-violet-400 dark:active:text-violet-400 dark:focus:border-violet-400 dark:focus:text-violet-400"
             >
               <Mail size={18} />
             </a>
@@ -134,7 +137,7 @@ const Hero = () => {
         >
 
           {/* Main profile container */}
-          <div className="relative">
+          <div className="relative mt-10">
 
             {/* Decorative ring */}
             <div className="absolute -inset-5 rounded-full border border-violet-500/30 animate-spin-slow" />
@@ -154,7 +157,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-violet-500/20 to-transparent pointer-events-none" />
             </div>
 
-            {/* Floating technology card */}
+            {/* Floating cards - commented out but with mobile support if uncommented */}
             {/*<motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{
@@ -169,7 +172,6 @@ const Hero = () => {
               </p>
             </motion.div>
 
-            {/* Floating project card
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{
@@ -201,7 +203,7 @@ const Hero = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center text-violet-400 transition hover:text-violet-500 md:flex"
+        className="absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center text-violet-400 transition hover:text-violet-500 active:text-violet-500 focus:text-violet-500 md:flex"
         aria-label="Scroll to About section"
       >
         <span className="mb-2 text-xs uppercase tracking-widest text-violet-500 dark:text-violet-400">

@@ -1,4 +1,4 @@
-// ProjectModal.jsx
+// ProjectModal.jsx - Updated with mobile support
 import { useEffect, useState } from "react";
 
 import {
@@ -77,7 +77,7 @@ const ProjectModal = ({ project, onClose }) => {
           type="button"
           onClick={onClose}
           aria-label="Close project"
-          className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+          className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] active:scale-110 active:bg-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.5)] focus:scale-110 focus:bg-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
         >
           <X size={20} />
         </button>
@@ -93,7 +93,7 @@ const ProjectModal = ({ project, onClose }) => {
               <img
                 src={gallery[activeImage]}
                 alt={`${project.title} screenshot ${activeImage + 1}`}
-                className="h-full w-full object-contain transition-all duration-300 hover:shadow-[0_0_50px_rgba(139,92,246,0.15)]"
+                className="h-full w-full object-contain transition-all duration-300 hover:shadow-[0_0_50px_rgba(139,92,246,0.15)] active:shadow-[0_0_50px_rgba(139,92,246,0.15)] focus:shadow-[0_0_50px_rgba(139,92,246,0.15)]"
               />
 
               {/* Previous */}
@@ -102,7 +102,7 @@ const ProjectModal = ({ project, onClose }) => {
                   type="button"
                   onClick={previousImage}
                   aria-label="Previous image"
-                  className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                  className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] active:scale-110 active:bg-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.5)] focus:scale-110 focus:bg-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                 >
                   <ChevronLeft size={22} />
                 </button>
@@ -114,7 +114,7 @@ const ProjectModal = ({ project, onClose }) => {
                   type="button"
                   onClick={nextImage}
                   aria-label="Next image"
-                  className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                  className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-violet-600/80 text-white transition-all duration-300 hover:scale-110 hover:bg-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] active:scale-110 active:bg-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.5)] focus:scale-110 focus:bg-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                 >
                   <ChevronRight size={22} />
                 </button>
@@ -136,10 +136,10 @@ const ProjectModal = ({ project, onClose }) => {
                     type="button"
                     key={image}
                     onClick={() => setActiveImage(index)}
-                    className={`aspect-video overflow-hidden rounded-lg border-2 transition-all duration-300 hover:scale-105 ${
+                    className={`aspect-video overflow-hidden rounded-lg border-2 transition-all duration-300 hover:scale-105 active:scale-105 focus:scale-105 ${
                       activeImage === index
                         ? "border-violet-500 shadow-[0_0_20px_rgba(139,92,246,0.3)]"
-                        : "border-transparent opacity-70 hover:opacity-100 hover:border-violet-500/50"
+                        : "border-transparent opacity-70 hover:opacity-100 hover:border-violet-500/50 active:opacity-100 active:border-violet-500/50 focus:opacity-100 focus:border-violet-500/50"
                     }`}
                   >
                     <img
@@ -187,7 +187,7 @@ const ProjectModal = ({ project, onClose }) => {
                 {project.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex gap-3 text-sm text-gray-600 transition-colors duration-300 hover:text-violet-600 dark:text-gray-400 dark:hover:text-violet-400"
+                    className="flex gap-3 text-sm text-gray-600 transition-colors duration-300 hover:text-violet-600 active:text-violet-600 focus:text-violet-600 dark:text-gray-400 dark:hover:text-violet-400 dark:active:text-violet-400 dark:focus:text-violet-400"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500 shadow-[0_0_10px_rgba(139,92,246,0.5)]" />
                     <span>{feature}</span>
@@ -207,7 +207,7 @@ const ProjectModal = ({ project, onClose }) => {
                 {project.technologies.map((technology) => (
                   <span
                     key={technology}
-                    className="rounded-lg bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-600 transition-all duration-300 hover:scale-105 hover:bg-violet-500/20 hover:shadow-[0_0_10px_rgba(139,92,246,0.15)] dark:bg-violet-500/10 dark:text-violet-400 dark:hover:bg-violet-500/20"
+                    className="rounded-lg bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-600 transition-all duration-300 hover:scale-105 hover:bg-violet-500/20 hover:shadow-[0_0_10px_rgba(139,92,246,0.15)] active:scale-105 active:bg-violet-500/20 active:shadow-[0_0_10px_rgba(139,92,246,0.15)] focus:scale-105 focus:bg-violet-500/20 focus:shadow-[0_0_10px_rgba(139,92,246,0.15)] dark:bg-violet-500/10 dark:text-violet-400 dark:hover:bg-violet-500/20 dark:active:bg-violet-500/20 dark:focus:bg-violet-500/20"
                   >
                     {technology}
                   </span>
@@ -223,7 +223,7 @@ const ProjectModal = ({ project, onClose }) => {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)]"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] active:scale-105 active:shadow-[0_0_30px_rgba(139,92,246,0.4)] focus:scale-105 focus:shadow-[0_0_30px_rgba(139,92,246,0.4)]"
                 >
                   <FaGithub size={17} />
                   GitHub
@@ -235,7 +235,7 @@ const ProjectModal = ({ project, onClose }) => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(192,38,211,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(192,38,211,0.4)]"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-fuchsia-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(192,38,211,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(192,38,211,0.4)] active:scale-105 active:shadow-[0_0_30px_rgba(192,38,211,0.4)] focus:scale-105 focus:shadow-[0_0_30px_rgba(192,38,211,0.4)]"
                 >
                   <ExternalLink size={17} />
                   Live Demo

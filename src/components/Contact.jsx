@@ -83,10 +83,10 @@ const Contact = () => {
             className="lg:col-span-2"
           >
 
-            <div className="relative rounded-2xl border border-violet-500/20 bg-white/80 p-7 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-950/80">
+            <div className="relative rounded-2xl border border-violet-500/20 bg-white/80 p-7 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] active:shadow-[0_0_30px_rgba(139,92,246,0.1)] focus:shadow-[0_0_30px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-950/80">
               
               {/* Glow effect */}
-              <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 group-hover:from-violet-500/5 group-hover:via-purple-500/5 group-hover:to-fuchsia-500/5" />
+              <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 group-hover:from-violet-500/5 group-hover:via-purple-500/5 group-hover:to-fuchsia-500/5 group-active:opacity-100 group-active:from-violet-500/5 group-active:via-purple-500/5 group-active:to-fuchsia-500/5 group-focus:opacity-100 group-focus:from-violet-500/5 group-focus:via-purple-500/5 group-focus:to-fuchsia-500/5" />
 
               <h3 className="relative text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent dark:from-violet-400 dark:to-purple-400">
                 Get in touch
@@ -100,9 +100,9 @@ const Contact = () => {
               {/* Email */}
               <a
                 href="mailto:salonics0812@gmail.com"
-                className="relative mt-7 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20"
+                className="relative mt-7 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] active:scale-[1.02] active:bg-violet-500/10 active:shadow-[0_0_20px_rgba(139,92,246,0.05)] focus:scale-[1.02] focus:bg-violet-500/10 focus:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20 dark:active:bg-violet-500/20 dark:focus:bg-violet-500/20"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 group-active:scale-110 group-focus:scale-110 dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                   <Mail size={20} />
                 </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
                     Email
                   </p>
 
-                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300">
+                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300">
                     salonics0812@gmail.com
                   </p>
                 </div>
@@ -120,9 +120,9 @@ const Contact = () => {
               {/* Phone */}
               <a
                 href="tel:+919426464653"
-                className="relative mt-2 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20"
+                className="relative mt-2 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] active:scale-[1.02] active:bg-violet-500/10 active:shadow-[0_0_20px_rgba(139,92,246,0.05)] focus:scale-[1.02] focus:bg-violet-500/10 focus:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20 dark:active:bg-violet-500/20 dark:focus:bg-violet-500/20"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 group-active:scale-110 group-focus:scale-110 dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                   <Phone size={20} />
                 </div>
 
@@ -131,15 +131,15 @@ const Contact = () => {
                     Phone
                   </p>
 
-                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300">
+                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300">
                     +91 9426464653
                   </p>
                 </div>
               </a>
 
               {/* Location */}
-              <div className="relative mt-2 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+              <div className="relative mt-2 flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:bg-violet-500/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.05)] active:scale-[1.02] active:bg-violet-500/10 active:shadow-[0_0_20px_rgba(139,92,246,0.05)] focus:scale-[1.02] focus:bg-violet-500/10 focus:shadow-[0_0_20px_rgba(139,92,246,0.05)] dark:hover:bg-violet-500/20 dark:active:bg-violet-500/20 dark:focus:bg-violet-500/20">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 shadow-[0_0_20px_rgba(139,92,246,0.1)] transition-all duration-300 group-hover:scale-110 group-active:scale-110 group-focus:scale-110 dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                   <MapPin size={20} />
                 </div>
 
@@ -148,7 +148,7 @@ const Contact = () => {
                     Location
                   </p>
 
-                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300">
+                  <p className="mt-1 text-sm font-medium text-gray-800 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-200 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300">
                     Surat, Gujarat, India
                   </p>
                 </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="GitHub"
-                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] active:scale-110 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.2)] focus:scale-110 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:active:border-violet-400 dark:active:text-violet-400 dark:focus:border-violet-400 dark:focus:text-violet-400"
                   >
                     <FaGithub size={20} />
                   </a> */}
@@ -178,7 +178,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="LinkedIn"
-                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-violet-500/30 bg-white/50 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:text-violet-600 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] active:scale-110 active:border-violet-500 active:text-violet-600 active:shadow-[0_0_20px_rgba(139,92,246,0.2)] focus:scale-110 focus:border-violet-500 focus:text-violet-600 focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:border-violet-500/30 dark:bg-gray-950/50 dark:text-gray-300 dark:hover:border-violet-400 dark:hover:text-violet-400 dark:active:border-violet-400 dark:active:text-violet-400 dark:focus:border-violet-400 dark:focus:text-violet-400"
                   >
                     <FaLinkedinIn size={19} />
                   </a>
@@ -199,10 +199,10 @@ const Contact = () => {
             className="lg:col-span-3"
           >
 
-            <div className="relative rounded-2xl border border-violet-500/20 bg-white/80 p-7 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-950/80 sm:p-8">
+            <div className="relative rounded-2xl border border-violet-500/20 bg-white/80 p-7 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] active:shadow-[0_0_30px_rgba(139,92,246,0.1)] focus:shadow-[0_0_30px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-950/80 sm:p-8">
               
               {/* Glow effect */}
-              <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 group-hover:from-violet-500/5 group-hover:via-purple-500/5 group-hover:to-fuchsia-500/5" />
+              <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 group-hover:from-violet-500/5 group-hover:via-purple-500/5 group-hover:to-fuchsia-500/5 group-active:opacity-100 group-active:from-violet-500/5 group-active:via-purple-500/5 group-active:to-fuchsia-500/5 group-focus:opacity-100 group-focus:from-violet-500/5 group-focus:via-purple-500/5 group-focus:to-fuchsia-500/5" />
 
               <h3 className="relative text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent dark:from-violet-400 dark:to-purple-400">
                 Send me a message
@@ -224,7 +224,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="name"
-                      className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300"
+                      className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300"
                     >
                       Your Name
                     </label>
@@ -237,14 +237,14 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="John Doe"
-                      className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
+                      className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] active:border-violet-500 active:ring-2 active:ring-violet-500/30 active:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
                     />
                   </div>
 
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300"
+                      className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300"
                     >
                       Email Address
                     </label>
@@ -257,7 +257,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="john@example.com"
-                      className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
+                      className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] active:border-violet-500 active:ring-2 active:ring-violet-500/30 active:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
                     />
                   </div>
 
@@ -267,7 +267,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300"
+                    className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300"
                   >
                     Subject
                   </label>
@@ -280,7 +280,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder="Let's work together"
-                    className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
+                    className="w-full rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] active:border-violet-500 active:ring-2 active:ring-violet-500/30 active:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
                   />
                 </div>
 
@@ -288,7 +288,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300"
+                    className="mb-2 block text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-violet-700 active:text-violet-700 focus:text-violet-700 dark:text-gray-300 dark:hover:text-violet-300 dark:active:text-violet-300 dark:focus:text-violet-300"
                   >
                     Message
                   </label>
@@ -301,16 +301,16 @@ const Contact = () => {
                     required
                     rows="6"
                     placeholder="Write your message..."
-                    className="w-full resize-none rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
+                    className="w-full resize-none rounded-xl border border-violet-500/20 bg-gray-50/80 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/30 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] active:border-violet-500 active:ring-2 active:ring-violet-500/30 active:shadow-[0_0_20px_rgba(139,92,246,0.1)] dark:border-violet-500/20 dark:bg-gray-900/80 dark:text-white"
                   />
                 </div>
 
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] sm:w-auto"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-600 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.2)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] active:scale-105 active:shadow-[0_0_30px_rgba(139,92,246,0.4)] focus:scale-105 focus:shadow-[0_0_30px_rgba(139,92,246,0.4)] sm:w-auto"
                 >
-                  <Send size={17} className="transition-transform duration-300 group-hover:rotate-12" />
+                  <Send size={17} className="transition-transform duration-300 group-hover:rotate-12 group-active:rotate-12 group-focus:rotate-12" />
                   Send Message
                 </button>
 

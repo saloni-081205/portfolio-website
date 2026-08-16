@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
 
-    title: "Real-Time Indian Sign Language Translator",
+    title: "Real-Time Indian Sign Language Translator (Final Year Project · Ongoing · 2026–Present)",
 
     shortDescription:
       "A real-time computer vision-based application designed to recognize Indian Sign Language (ISL) gestures through a webcam and convert them into understandable text. The project combines AI-based gesture recognition with a modern web interface to support accessible and interactive communication.",
@@ -13,9 +13,7 @@ export const projects = [
     image: "/images/projects/isl-project.png",
 
     gallery: [
-      "/images/projects/isl-project.png",
-      "/images/projects/isl-dashboard.png",
-      "/images/projects/isl-camera.png",
+      "/images/projects/isl-project.png"
     ],
 
     technologies: [
@@ -55,12 +53,12 @@ export const projects = [
       "A full-stack expense management application developed to help users efficiently record, organize, and monitor their daily expenses. The application follows a structured frontend–backend architecture with REST APIs, database integration, authentication, and CRUD operations.",
 
     description:
-      "Detailed description of the project will go here. Explain the problem, your solution, your role, major functionality, and what you learned from building the project.",
+      "A full-stack expense management application designed to help users efficiently record, organize, and monitor their personal finances. The application features a responsive React.js frontend integrated with a PHP backend through RESTful APIs, with MySQL providing persistent data storage. It implements user authentication, category and expense management, complete CRUD operations, and structured database relationships. The project also involved API testing with Postman, input validation, debugging, query optimization, and frontend–backend integration to deliver a reliable and user-friendly expense tracking experience.",
 
     image: "/images/projects/expense-tracker-project.png",
 
     gallery: [
-      "/images/projects/project2.png",
+      "/images/projects/expense-tracker-project.png",
     ],
 
     technologies: [
@@ -98,12 +96,12 @@ export const projects = [
       "An enterprise-style web-based airline reservation system developed using Java EE technologies and MVC architecture to streamline flight search, seat booking, reservation management, and simulated payment processing.",
 
     description:
-      "Detailed project description will be added here.",
+      "An enterprise-style web-based airline reservation system developed using Java, JSP, Servlets, JDBC, and Oracle, following the MVC architecture to maintain a clear separation between presentation, business logic, and data access layers. The system enables users to search flights, check real-time seat availability, select multiple seats, make reservations, and complete simulated payment processing with e-ticket confirmation. It also includes role-based Admin and Customer dashboards, session-based authentication, automatic seat allocation, input validation, and parameterized database queries for secure and reliable reservation management.",
 
     image: "/images/projects/airline-project.png",
 
     gallery: [
-      "/images/projects/project3.png",
+      "/images/projects/airline-project.png",
     ],
 
     technologies: [

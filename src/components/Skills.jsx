@@ -119,18 +119,18 @@ const Skills = () => {
                   duration: 0.5,
                   delay: categoryIndex * 0.08,
                 }}
-                className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)]"
+                className="group relative rounded-2xl border border-violet-500/20 bg-white/80 p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(139,92,246,0.05)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-violet-500/40 hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] active:-translate-y-2 active:scale-[1.02] active:border-violet-500/40 active:shadow-[0_0_40px_rgba(139,92,246,0.15)] focus:-translate-y-2 focus:scale-[1.02] focus:border-violet-500/40 focus:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-950/80 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:active:border-violet-500/40 dark:active:shadow-[0_0_40px_rgba(139,92,246,0.15)] dark:focus:border-violet-500/40 dark:focus:shadow-[0_0_40px_rgba(139,92,246,0.15)]"
               >
-                {/* Glow effect on hover */}
-                <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 " />
+                {/* Glow effect on hover/active/focus */}
+                <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-violet-500/0 via-purple-500/0 to-fuchsia-500/0 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 group-hover:from-violet-500/10 group-hover:via-purple-500/10 group-hover:to-fuchsia-500/10 group-active:opacity-100 group-active:from-violet-500/10 group-active:via-purple-500/10 group-active:to-fuchsia-500/10 group-focus:opacity-100 group-focus:from-violet-500/10 group-focus:via-purple-500/10 group-focus:to-fuchsia-500/10" />
 
                 {/* Top border glow */}
-                <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
+                <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
 
                 {/* Category Header */}
                 <div className="relative flex items-center gap-3">
 
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/10 text-violet-600 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] group-active:scale-110 group-active:shadow-[0_0_20px_rgba(139,92,246,0.2)] group-focus:scale-110 group-focus:shadow-[0_0_20px_rgba(139,92,246,0.2)] dark:from-violet-500/20 dark:to-purple-500/20 dark:text-violet-400">
                     <CategoryIcon size={24} />
                   </div>
 
@@ -150,17 +150,17 @@ const Skills = () => {
                     return (
                       <div
                         key={skill.name}
-                        className="group/skill flex items-center gap-2 rounded-xl border border-violet-500/20 bg-white/50 px-3 py-2 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-violet-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-900/50 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.15)]"
+                        className="group/skill flex items-center gap-2 rounded-xl border border-violet-500/20 bg-white/50 px-3 py-2 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:border-violet-500/40 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] active:-translate-y-1 active:scale-105 active:border-violet-500/40 active:shadow-[0_0_20px_rgba(139,92,246,0.15)] focus:-translate-y-1 focus:scale-105 focus:border-violet-500/40 focus:shadow-[0_0_20px_rgba(139,92,246,0.15)] dark:border-violet-500/20 dark:bg-gray-900/50 dark:hover:border-violet-500/40 dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] dark:active:border-violet-500/40 dark:active:shadow-[0_0_20px_rgba(139,92,246,0.15)] dark:focus:border-violet-500/40 dark:focus:shadow-[0_0_20px_rgba(139,92,246,0.15)]"
                       >
                         {Icon && (
                           <Icon
                             size={20}
                             style={{ color: iconColor }}
-                            className="transition-all duration-300 group-hover/skill:scale-110"
+                            className="transition-all duration-300 group-hover/skill:scale-110 group-active/skill:scale-110 group-focus/skill:scale-110"
                           />
                         )}
 
-                        <span className="text-sm font-medium text-gray-700 transition-colors duration-300 group-hover/skill:text-violet-700 dark:text-gray-300 dark:group-hover/skill:text-violet-300">
+                        <span className="text-sm font-medium text-gray-700 transition-colors duration-300 group-hover/skill:text-violet-700 group-active/skill:text-violet-700 group-focus/skill:text-violet-700 dark:text-gray-300 dark:group-hover/skill:text-violet-300 dark:group-active/skill:text-violet-300 dark:group-focus/skill:text-violet-300">
                           {skill.name}
                         </span>
                       </div>
